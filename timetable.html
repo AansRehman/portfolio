@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Schedule Table</title>
+	<link rel="stylesheet" type="text/css" href="timetable.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="timetable.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<h1>Schedule Table</h1>
+		<table>
+			<tr>
+				<th></th>
+				<th>08:30 AM-09:50 AM</th>
+				<th>10:00 AM-11:20 AM</th>
+				<th>11:30 AM-12:50 PM</th>
+				<th>01:00 PM-02:20 PM</th>
+				<th>02:30 PM-03:50 PM</th>
+				<th>03:55 PM-05:15 PM</th>
+			</tr>
+			<tr>
+				<th>Monday</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Tuesday</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Wednesday</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Thursday</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Friday</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<div class="form">
+			<label for="row-header">Row Header:</label>
+			<select id="row-header">
+				<option value="Monday">Monday</option>
+				<option value="Tuesday">Tuesday</option>
+				<option value="Wednesday">Wednesday</option>
+				<option value="Thursday">Thursday</option>
+				<option value="Friday">Friday</option>
+			</select>
+			<label for="col-header">Column Header:</label>
+			<select id="col-header">
+				<option value="08:30 AM-09:50 AM">08:30 AM-09:50 AM</option>
+				<option value="10:00 AM-11:20 AM">10:00 AM-11:20 AM</option>
+				<option value="11:30 AM-12:50 PM">11:30 AM-12:50 PM</option>
+				<option value="01:00 PM-02:20 PM">01:00 PM-02:20 PM</option>
+				<option value="02:30 PM-03:50 PM">02:30 PM-03:50 PM</option>
+				<option value="03:55 PM-05:15 PM">03:55 PM-05:15 PM</option>
+			</select>
+      <label for="agenda-text">Agenda:</label>
+			<input type="text" id="agenda-text">
+			<button id="add-agenda-btn">Add Agenda</button>
+		</div>
+		<div class="buttons">
+			<button id="add-row-btn">Add Row</button>
+			<button id="add-col-btn">Add Column</button>
+		</div>
+	</div>
+</body>
+</html>
